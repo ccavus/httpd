@@ -41,6 +41,7 @@ RUN set -x \
 		openssl-dev \
 		pcre-dev \
 		tar \
+		php5 \
 	\
 	&& wget -O httpd.tar.bz2 "$HTTPD_BZ2_URL" \
 	&& echo "$HTTPD_SHA1 *httpd.tar.bz2" | sha1sum -c - \
