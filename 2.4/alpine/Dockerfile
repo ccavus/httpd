@@ -82,7 +82,7 @@ RUN set -x \
 	&& apk del .build-deps
 
 COPY httpd-foreground /usr/local/bin/
-RUN echo "<?php phpinfo() ?>" > /usr/local/apache2/index.php
+RUN echo "<?php phpinfo() ?>" > /usr/local/apache2/htdocs/index.php
 
 EXPOSE 80
 CMD ["httpd-foreground"]
